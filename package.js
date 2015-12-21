@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'dburles:google-maps',
-  summary: 'Google Maps Javascript API v3',
-  version: '1.1.5',
-  git: 'https://github.com/dburles/meteor-google-maps.git'
+  name: 'alisalaah:google-maps-richmarker',
+  summary: 'Google Maps Javascript API v3 with RichMarker',
+  version: '1.2.0',
+  git: 'https://github.com/alisalaah/meteor-google-maps-richmarker.git'
 });
 
 Package.onUse(function(api) {
@@ -13,7 +13,8 @@ Package.onUse(function(api) {
     'underscore']);
   api.addFiles([
     'google-maps.html',
-    'google-maps.js'], 'client');
+    'google-maps.js',
+	'richmarker.js'], 'client');
   api.export('GoogleMaps', 'client');
 });
 
